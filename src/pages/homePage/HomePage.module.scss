@@ -1,12 +1,7 @@
-//font-family: "Raleway", "PT Sans", sans-serif;
 .homePageWrapper {
   width: 100%;
   height: auto;
-  background: -webkit-linear-gradient(
-    67deg,
-    hsla(350, 73%, 44%, 1) 0%,
-    hsla(274, 65%, 12%, 1) 100%
-  );
+  background-color: #c41616;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -220,114 +215,362 @@
       .basicPaymentBox {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 30%;
         height: 80%;
         border: 5px solid white;
         border-radius: 40px;
-        .basicHeader {
-          font-size: 50px;
-          line-height: 60px;
-          text-align: center;
-          color: rgb(235, 212, 183);
-          margin: 20px 0;
+        .boxinfo {
+          .basicHeader {
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            color: rgb(235, 212, 183);
+            margin: 20px 0;
+          }
+          .devider {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: white;
+            margin: 0 0 40px 0;
+          }
+          p {
+            font-family: "PT Sans", sans-serif;
+            font-size: 30px;
+            line-height: 35px;
+            color: white;
+            margin: 0 0 13% 5%;
+          }
         }
-        .devider {
-          display: block;
-          width: 100%;
-          height: 4px;
-          background-color: white;
-          margin: 0 0 40px 0;
-        }
-        p {
-          font-family: "PT Sans", sans-serif;
-          font-size: 30px;
-          line-height: 35px;
-          color: white;
-          margin: 0 0 6% 5%;
-        }
-        .price {
-          font-family: "PT Sans", sans-serif;
-          font-size: 40px;
-          line-height: 65px;
-          color: white;
-          margin: 85px auto 30px auto;
-        }
-        .basicPaymentBtn {
-          width: 80%;
-          height: 85px;
-          background: -webkit-linear-gradient(
-            67deg,
-            hsl(350, 73%, 44%) 0%,
-            hsl(274, 65%, 12%) 100%
-          );
-          color: white;
-          cursor: pointer;
-          margin: 0 auto;
-          border-radius: 40px;
-          font-family: "PT Sans", sans-serif;
-          font-size: 30px;
-          line-height: 35px;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          padding: 20px 0 0 0;
+        .boxpayment {
+          display: flex;
+          flex-direction: column;
+          .price {
+            font-family: "PT Sans", sans-serif;
+            font-size: 40px;
+            line-height: 65px;
+            color: white;
+            margin: 5px auto 5px auto;
+          }
+          .basicPaymentBtn {
+            width: 80%;
+            height: 85px;
+            background: -webkit-linear-gradient(
+              67deg,
+              hsl(350, 73%, 44%) 0%,
+              hsl(274, 65%, 12%) 100%
+            );
+            color: white;
+            cursor: pointer;
+            margin: 0 auto 50px auto;
+            border-radius: 40px;
+            font-family: "PT Sans", sans-serif;
+            font-size: 30px;
+            line-height: 35px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 0 0 0;
+          }
         }
       }
       .vipPaymentBox {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 30%;
         height: 80%;
         border: 5px solid white;
         border-radius: 40px;
         background-color: darkgoldenrod;
-        .vipHeader {
-          font-size: 50px;
-          line-height: 60px;
-          text-align: center;
-          color: gold;
-          margin: 20px 0;
+        .boxinfoVip {
+          .vipHeader {
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            color: gold;
+            margin: 20px 0;
+          }
+          .devider {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: white;
+            margin: 0 0 40px 0;
+          }
+          p {
+            font-family: "PT Sans", sans-serif;
+            font-size: 28px;
+            line-height: 35px;
+            color: white;
+            margin: 0 0 8% 5%;
+          }
         }
-        .devider {
-          display: block;
-          width: 100%;
-          height: 4px;
-          background-color: white;
-          margin: 0 0 40px 0;
+        .boxpaymentVip {
+          display: flex;
+          flex-direction: column;
+          .price {
+            font-family: "PT Sans", sans-serif;
+            font-size: 40px;
+            line-height: 65px;
+            color: white;
+            margin: 0 auto 30px auto;
+          }
+          .vipPaymentBtn {
+            width: 80%;
+            height: 85px;
+            background: -webkit-linear-gradient(
+              67deg,
+              hsl(350, 73%, 44%) 0%,
+              hsl(274, 65%, 12%) 100%
+            );
+            color: white;
+            cursor: pointer;
+            margin: 0 auto 50px auto;
+            border-radius: 40px;
+            font-family: "PT Sans", sans-serif;
+            font-size: 30px;
+            line-height: 35px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px 0 0 0;
+          }
         }
-        p {
-          font-family: "PT Sans", sans-serif;
-          font-size: 28px;
-          line-height: 35px;
-          color: white;
-          margin: 0 0 6% 5%;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .homePageWrapper {
+    main {
+      .payment {
+        .basicPaymentBox {
+          .boxinfo {
+            p {
+              font-size: 23px;
+            }
+          }
         }
-        .price {
-          font-family: "PT Sans", sans-serif;
+        .vipPaymentBox {
+          .boxinfoVip {
+            p {
+              font-size: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .homePageWrapper {
+    header {
+      img {
+        width: 400px;
+        height: auto;
+      }
+      .headerInfo {
+        h1 {
           font-size: 40px;
-          line-height: 65px;
-          color: white;
-          margin: 0 auto 30px auto;
+          line-height: 60px;
         }
-        .vipPaymentBtn {
-          width: 80%;
-          height: 85px;
-          background: -webkit-linear-gradient(
-            67deg,
-            hsl(350, 73%, 44%) 0%,
-            hsl(274, 65%, 12%) 100%
-          );
-          color: white;
-          cursor: pointer;
-          margin: 0 auto;
-          border-radius: 40px;
-          font-family: "PT Sans", sans-serif;
-          font-size: 30px;
-          line-height: 35px;
-          color: white;
-          text-align: center;
-          text-decoration: none;
-          padding: 20px 0 0 0;
+      }
+    }
+    main {
+      .programResultInfo {
+        .days {
+          .day {
+            p {
+              margin: 10px 0 0 0;
+            }
+          }
+        }
+      }
+      .payment {
+        .basicPaymentBox {
+          width: 40%;
+        }
+        .vipPaymentBox {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .homePageWrapper {
+    header {
+      width: 95%;
+      img {
+        width: 300px;
+      }
+      .headerInfo {
+        h1 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+      }
+    }
+    main {
+      .programResultInfo {
+        .days {
+          flex-direction: column;
+          align-items: center;
+          .day {
+            margin: 0 0 30px 0;
+            width: 70%;
+          }
+        }
+      }
+      .payment {
+        height: auto;
+        flex-direction: column;
+        .basicPaymentBox,
+        .vipPaymentBox {
+          margin: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .homePageWrapper {
+    main {
+      .payment {
+        .basicPaymentBox {
+          width: 60%;
+          .boxinfo {
+            p {
+              font-size: 30px;
+            }
+          }
+        }
+        .vipPaymentBox {
+          width: 60%;
+          .boxinfoVip {
+            p {
+              font-size: 30px;
+              margin: 0 0 5% 5%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .homePageWrapper {
+    header {
+      width: 100%;
+      img {
+        width: 250px;
+      }
+      .headerInfo {
+        margin: 0 20px 0 0;
+        h1 {
+          font-size: 25px;
+        }
+        button {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+    main {
+      .creatorInfoBox {
+        .creatorBox {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 40px 0;
+          align-items: center;
+          .creatorFoto {
+            width: 300px;
+            margin: 0 0 30px 0;
+          }
+          .creatorInfo {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .homePageWrapper {
+    header {
+      img {
+        width: 200px;
+      }
+      .headerInfo {
+        h1 {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+    main {
+      .creatorInfoBox {
+        .creatorBox {
+          .creatorFoto {
+            width: 90%;
+          }
+        }
+      }
+      .programResultInfo {
+        .days {
+          .day {
+            width: 90%;
+            span {
+              font-size: 20px;
+              line-height: 30px;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .payment {
+        .basicPaymentBox {
+          width: 85%;
+        }
+        .vipPaymentBox {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .homePageWrapper {
+    header {
+      img {
+        width: 50%;
+      }
+      .headerInfo {
+        h1 {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        h3 {
+          font-size: 22px;
+        }
+        button {
+          font-size: 11px;
+        }
+      }
+    }
+    main {
+      .creatorInfoBox {
+        .creatorBox {
+          .creatorInfo {
+            p {
+              font-size: 38px;
+            }
+          }
         }
       }
     }
