@@ -1,0 +1,29 @@
+.footerWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  a {
+    margin: 50px 0;
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  .links {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px 0;
+    a {
+      margin: 0;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
