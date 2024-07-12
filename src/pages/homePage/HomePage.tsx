@@ -5,10 +5,6 @@ import style from "./HomePage.module.scss";
 const HomePage: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
   const closeDropdown = (e: MouseEvent) => {
     if (
       !(e.target as HTMLElement).closest(`.${style.basicPaymentBtn}`) &&
