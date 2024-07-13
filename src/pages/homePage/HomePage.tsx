@@ -140,7 +140,7 @@ const HomePage: React.FC = () => {
         <div className={style.headerInfo}>
           <h1>З Жертви до Авторки свого Життя!</h1>
           <h3>19.07</h3>
-          <button onClick={scrollToPayment}>Запис на конференцію</button>
+          <button onClick={scrollToPayment}>ЗАПИС на СУПЕР інтенсив</button>
         </div>
       </header>
       <span className={style.devider}></span>
