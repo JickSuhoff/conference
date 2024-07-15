@@ -66,23 +66,17 @@ const HomePage: React.FC = () => {
     const today = new Date();
     const basicInitialPrice = 10;
     const vipInitialPrice = 20;
-    const basicFirstChangeDate = new Date("2024-07-15");
     const basicSecondChangeDate = new Date("2024-07-17");
-    const vipFirstChangeDate = new Date("2024-07-15");
     const vipSecondChangeDate = new Date("2024-07-17");
 
     let basicPrice = basicInitialPrice;
     let vipPrice = vipInitialPrice;
 
-    if (today >= basicFirstChangeDate && today < basicSecondChangeDate) {
-      basicPrice = 12;
-    } else if (today >= basicSecondChangeDate) {
+    if (today >= basicSecondChangeDate) {
       basicPrice = 15;
     }
 
-    if (today >= vipFirstChangeDate && today < vipSecondChangeDate) {
-      vipPrice = 22;
-    } else if (today >= vipSecondChangeDate) {
+    if (today >= vipSecondChangeDate) {
       vipPrice = 25;
     }
 
